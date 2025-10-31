@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="OnlineCart Regression Suite" verbose="4"
+	thread-count="2" parallel="tests">
+
+	<test name="Login Page Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.onlinecart.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="Account Page Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.onlinecart.tests.AccountPageTest" />
+		</classes>
+	</test>
+
+	<test name="Search Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.onlinecart.tests.SearchTest" />
+		</classes>
+	</test>
+
+	<test name="Product Info Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.onlinecart.tests.ProductPageInfoTest" />
+		</classes>
+	</test>
+
+</suite>
+
+<!--If you want to run all your test cases only on chrome browser.-->
